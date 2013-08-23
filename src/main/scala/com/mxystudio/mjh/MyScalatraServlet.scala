@@ -3,15 +3,24 @@ package com.mxystudio.mjh
 import org.scalatra._
 import scalate.ScalateSupport
 
-class MyScalatraServlet extends MjhwebsiteStack {
+class MyScalatraServlet extends MjhwebsiteStack with ScalateSupport {
+
+  get("/index") {
+    redirect("/")
+  }
+  get("/index.html") {
+    redirect("/")
+  }
 
   get("/") {
-    <html>
-      <body>
-        <h1>Hello, world!</h1>
-        Say <a href="hello-scalate">hello to Scalate</a>.
-      </body>
-    </html>
+    contentType = "text/html"
+    mustache("index.mustache", "layout" -> "")
   }
-  
+
+  get("/picshow") {
+    contentType = "text/html"
+    mustache("picshow.mustache", "layout" -> "")
+
+  }
+
 }

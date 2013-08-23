@@ -23,18 +23,18 @@ object MjhwebsiteBuild extends Build {
       resolvers += Classpaths.typesafeReleases,
       libraryDependencies ++= Seq(
 	  //===============sql=====================================
-		"org.squeryl" %% "squeryl" % "0.9.5-6", 
-		"mysql" % "mysql-connector-java" % "5.1.10",      // for MySQL, or use  5.1.10  5.1.22
-		"c3p0" % "c3p0" % "0.9.1.2",
+//		"org.squeryl" %% "squeryl" % "0.9.5-6", 
+//		"mysql" % "mysql-connector-java" % "5.1.10",      // for MySQL, or use  5.1.10  5.1.22
+//		"c3p0" % "c3p0" % "0.9.1.2",
 		//===============logger=====================================
-		"org.clapper" % "grizzled-slf4j_2.10" % "1.0.1",
+//		"org.clapper" % "grizzled-slf4j_2.10" % "1.0.1",
 		//===============json=======================================
-		"org.apache.commons" % "commons-digester3" % "3.0",
+//		"org.apache.commons" % "commons-digester3" % "3.0",
 		//===============json=====================================
-		"org.scalatra" %% "scalatra-json" % "2.2.0",
-		"org.json4s" %% "json4s-native" % "3.2.3",
-		"org.json4s" %% "json4s-jackson" % "3.2.3",
-		"net.liftweb" %% "lift-json" % "2.5-RC1",
+//		"org.scalatra" %% "scalatra-json" % "2.2.0",
+//		"org.json4s" %% "json4s-native" % "3.2.3",
+//		"org.json4s" %% "json4s-jackson" % "3.2.3",
+//		"net.liftweb" %% "lift-json" % "2.5-RC1",
 		//==========================================================
 	  
         "org.scalatra" %% "scalatra" % ScalatraVersion,
